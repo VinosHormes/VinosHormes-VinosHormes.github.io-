@@ -1,6 +1,9 @@
-body{
+*{
+    margin: 0;
+        padding: 0;
 
-display: flexbox;
+}
+body{
 
             background-image: url(./bild/photo-1558591710-4b4a1ae0f04d.jpg);
 
@@ -12,7 +15,6 @@ display: flexbox;
         left: 181px;
         top: 464px;
     
-
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
@@ -219,4 +221,102 @@ position: absolute;
     align-items: center;
 
     color: #0C0505;
+}
+
+.workk{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.sliders{
+    width: 500%;
+    height: 500px;
+    display: flex;
+   
+}
+.sliders input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+.manu-nav{
+position: absolute;
+width: 800px;
+margin-top: 460px;
+display: flex;
+justify-content: center;
+}
+.manual-btn{
+    border: 2px solid rgb(53, 6, 6);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px ;
+
+}
+
+.manual-btn:hover{
+    background: #de4545;
+}
+
+#radio-1:checked~ .first{
+    margin-left: 0;
+}
+#radio-2:checked~.first {
+    margin-left: -20%;
+}
+#radio-3:checked~.first {
+    margin-left: -40%;
+}
+#radio-4:checked~.first {
+    margin-left: -60%;
+}
+#radio-5:checked~.first {
+    margin-left: -80%;
+}
+
+
+.auto-nav div{
+    border: 2px solid rgb(53, 6, 6);
+        padding: 5px;
+        border-radius: 10px;
+        transition: 1s;
+}
+.auto-nav div:not(:last-child){
+    margin-right: 40px;
+}
+#radio-1:checked~.auto-nav .btn1{
+    background:#000000;
+}
+#radio-2:checked~.auto-nav .btn2{
+    background: #000000;
+}
+#radio-3:checked~.auto-nav .btn4{
+    background: #000000;
+}
+#radio-4:checked~.auto-nav .btn5{
+    background: #000000;
+}
+#radio-5:checked~.auto-nav .btn6{
+    background: #000000;
 }
