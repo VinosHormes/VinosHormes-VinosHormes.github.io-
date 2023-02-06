@@ -8,52 +8,50 @@
     <title>Work</title>
   </head>
   <body class="workk">
-    <div class="slider">
-      <div class="sliders">
-        <input type="radio" name="radio-btn" id="radio-1" />
 
-        <input type="radio" name="radio-btn" id="radio-2" />
+<!--image slider start-->
+<div class="slider">
+  <div class="slides">
+   <!--radio buttons start-->
+     <input type="radio" name="radio-btn" id="radio1">
+     <input type="radio" name="radio-btn" id="radio2">
+     <input type="radio" name="radio-btn" id="radio3">
+     <input type="radio" name="radio-btn" id="radio4">
+   <!--radio buttons end-->
 
-        <input type="radio" name="radio-btn" id="radio-3" />
+   <!--slide images start-->
+   <div class="slide first">
+     <img src="./bild/Rectangle 2.png" alt="">
+   </div>
+   <div class="slide">
+      <img src="./bild/Rectangle 3.png" alt="">
+   </div>
+   <div class="slide">
+      <img src="./bild/Rectangle 4.png" alt="">
+   </div>
+   <div class="slide">
+      <img src="./bild/Rectangle 5.png" alt="">
+   </div>
+   <div class="slide">
+    <img src="./bild/Rectangle 6.png" alt="">
+ </div>
 
-        <input type="radio" name="radio-btn" id="radio-4" />
+  <!--slide images end-->
 
-        <input type="radio" name="radio-btn" id="radio-5" />
+ 
+ <!--automatic navigation end-->
+ </div>
 
-        <div class="slide first">
-          <img src="./bild/Rectangle 2.png" alt="" />
-        </div>
-        <div class="slide">
-          <img src="./bild/Rectangle 3.png" alt="" />
-        </div>
-        <div class="slide">
-          <img src="./bild/Rectangle 4.png" alt="" />
-        </div>
-        <div class="slide">
-          <img src="./bild/Rectangle 5.png" alt="" />
-        </div>
-        <div class="slide">
-          <img src="./bild/Rectangle 6.png" alt="" />
-        </div>
-
-        <div class="auto-nav">
-          <div class="btn1"></div>
-          <div class="btn2"></div>
-          <div class="btn3"></div>
-          <div class="btn4"></div>
-          <div class="btn5"></div>
-        </div>
-
-        <div class="manu-nav">
-          <label for="radio-1" class="manual-btn"></label>
-          <label for="radio-2" class="manual-btn"></label>
-          <label for="radio-3" class="manual-btn"></label>
-          <label for="radio-4" class="manual-btn"></label>
-          <label for="radio-5" class="manual-btn"></label>
-        </div>
-      </div>
-    </div>
-
+ <!--manual navigation start-->
+  <div class="navigation-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+  </div>
+ <!--manual navigation end-->
+</div> 
+<!--image slider end-->
     <nav class="navi">
       <a href="About.html">About</a>
       <a href="index.html">Home</a>
@@ -66,13 +64,13 @@ script är för att blädra genom bilderna atumatiskt, men för någon anldening
     
     <script type="text/javascript">
       var counter = 1;
-      setInterval(function () {
-        document.getElementById("radio" + counter).checked = true;
+      setInterval(function() {
+        document.getElementById('radio' + counter).checked = true;
         counter++;
-        if (counter > 5) {
+        if (counter > 4) {
           counter = 1;
         }
-      }, 4000);
+      }, 5000);
     </script>
   </body>
 </html>
